@@ -2,7 +2,7 @@
 
 This project contains the source code for an Android application designed to help users store vocabulary words with definitions, example sentences, and attached photos. The app also features synchronization with the user's Google Drive using the AppData folder for secure backup.
 
-## Features
+## Feature
 
 *   Add, edit, and delete vocabulary words.
 *   Attach photos to words (from camera or gallery).
