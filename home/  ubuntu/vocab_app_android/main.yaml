@@ -10,6 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: home/ubuntu/vocab_app_android
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -21,7 +25,7 @@ jobs:
           java-version: 17
 
       - name: Grant execute permission for gradlew
-        run: chmod +x ./gradlew
+        run: chmod +x gradlew
 
       - name: Run unit tests
         run: ./gradlew test
@@ -33,4 +37,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: app-debug-apk
-          path: app/build/outputs/apk/debug/*.apk
+          path: home/ubuntu/vocab_app_android/app/build/outputs/apk/debug/*.apk
