@@ -12,7 +12,7 @@ This project contains the source code for an Android application designed to hel
 *   Securely synchronize data (words and photos) with Google Drive (AppData folder).
 *   Offline access to locally stored data.
 
-## Project Structure
+## Project Structures
 
 The code is organized into standard Android project directories:
 
